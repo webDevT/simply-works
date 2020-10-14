@@ -1,0 +1,227 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	h1 
+		font-size: 50px
+	.logo
+		text-transform: none
+		font-size: 22px
+		max-width: 20px
+		span 
+			display: none
+		br 
+			display: block
+	h5 
+		font-size: 18px
+	.menu ul
+		position: fixed
+		width: 100% 
+		height: 100vh
+		overflow-y: auto
+		background: #000
+		top: 0 
+		left: 0
+		z-index: 9999
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding-top: 20px
+		transition: all .5s
+		transform: translateX(100%)
+		
+
+		svg 
+			display: block
+			align-self: flex-end
+			margin-right: 20px
+			margin-bottom: 50px
+		li 
+			margin-right: 0
+			margin-bottom: 48px
+			a 
+				font-size: 25.6px
+				font-family: $roboto-condens
+
+		a:before 
+			display: none
+	.menu ul.active 
+		transform: translateX(0)
+
+	.menu__btn
+		cursor: pointer
+		display: block
+	.menu__row
+		width: 24px 
+		height: 2px
+		transition: all .3s cubic-bezier(.645, .045, .355, 1)
+		background: #fff
+		margin-bottom: 6px
+		display: block
+	.menu__row:last-child 
+		margin-bottom: 0
+	.top-header 
+		padding-top: 28px
+	.container-fluid 
+		max-width: 100%
+		padding-left: 30px 
+		padding-right: 30px
+	.header__line
+		margin-top: 100px
+	.header__items
+		margin-top: 140px
+		flex-direction: column
+	.header__item
+		width: 100%
+		margin-bottom: 20px
+		padding: 40px 40px 40px 40px
+	.header__item:last-child 
+		margin-bottom: 0
+	.menu 
+		svg 
+			line 
+				stroke: rgba(#fff, 0.5)
+
+
+	.header
+		background-color: #000000
+		background-image: url('../img/header-bg.jpg')
+		background-position: 295px 124px
+		background-size: 70% auto
+	.header__item:last-child:before
+		display: none
+	.impact .col-lg-8
+		margin-bottom: 30px
+		.impact__item--first
+			height: 400px
+	.impact__items
+		.row 
+			.col-lg-4 
+				.impact__item--second,
+				.impact__item--third
+					min-height: 285px
+				.impact__item--second
+					margin-bottom: 30px
+	.footer 
+		.container-fluid 
+			flex-direction: column 
+			align-items: center
+			text-align: center 
+			.copy 
+				margin-bottom: 20px
+	.top-header
+		transition: all 0.5s
+	.top-header.sticky 
+		position: fixed
+		width: 100% 
+		top: 0 
+		left: 0
+		background: #000
+		z-index: 9999
+		padding-bottom: 10px
+		padding-top: 10px
+
+
+
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	h1 
+		font-size: 40px
+	.header
+		background-color: #000000
+		background-image: url('../img/header-bg.jpg')
+		background-position: 17px 190px
+		background-size: 626px auto
+	.impact__columns
+		.col-lg-4 
+			margin-bottom: 20px
+	.impact
+		padding-bottom: 40px
+	.portfolio,
+	.services
+		padding-bottom: 50px
+	.section-header
+		padding-top: 100px
+	.reviews
+		.col-md-7
+			padding-left: 15px
+			h2 
+				font-size: 30px 
+				font-family: $roboto
+				font-weight: 700
+			p 
+				font-size: 20px
+		.section-header 
+			padding-bottom: 30px
+	.contact
+		padding-top: 80px
+		padding-bottom: 80px
+	.rewievs-img:before
+		display: none
+	.popup
+		padding: 30px 15px 30px 15px
+
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.container-fluid 
+		max-width: 100%
+		padding-left: 15px 
+		padding-right: 15px
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 335px)
+	/**/
+	h1 
+		font-size: 38px
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
