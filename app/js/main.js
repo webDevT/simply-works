@@ -53,11 +53,6 @@ $('.menu ul li').click(function(){
 
 });
 
-$(function(){
-$(elements).lazyLoadXT();
 
-
-
-});
 
 $.lazyLoadXT.onload.addClass = "animated fadeIn";
